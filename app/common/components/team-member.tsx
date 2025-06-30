@@ -37,7 +37,7 @@ export default function TeamMember() {
           </h2>
         </div>
       </div>
-      <div className='w-full h-auto pb-[100px] md:pb-[150px]'></div>
+      <div className='w-full h-auto pb-[100px]'></div>
       {memberData.map((item, key) => (
         <div
           className='relative flex flex-col items-center mb-[50px] md:mb-[100px] px-4'

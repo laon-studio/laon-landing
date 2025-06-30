@@ -25,7 +25,15 @@ export default function Portfolio() {
 
   return (
     <div className='flex flex-col items-center justify-center px-4 py-20'>
-      <h2 className='text-4xl font-bold mb-10'>Portfolio</h2>
+      <div className='flex items-center justify-center'>
+        <div className='flex flex-col max-w-xl gap-4 text-center'>
+          <p className=' text-xs tracking-[0.1em] uppercase'>Our work</p>
+          <h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl'>
+            See what we’ve built
+          </h2>
+        </div>
+      </div>
+      <div className='w-full h-auto pb-[100px]'></div>
       <Carousel className='lg:w-5xl md:w-3xl'>
         <CarouselContent>
           {cardData.map((item, key) => (
