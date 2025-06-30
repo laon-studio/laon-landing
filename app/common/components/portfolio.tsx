@@ -3,16 +3,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from '~/common/components/ui/carousel';
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from '~/common/components/ui/card';
-import { link } from 'fs';
+import { Card, CardContent, CardFooter } from '~/common/components/ui/card';
 
 export default function Portfolio() {
   const cardData = [
@@ -33,9 +24,9 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className='flex flex-col items-center justify-center pt-20 pb-20'>
+    <div className='flex flex-col items-center justify-center px-4 py-20'>
       <h2 className='text-4xl font-bold mb-10'>Portfolio</h2>
-      <Carousel className='w-5xl'>
+      <Carousel className='lg:w-5xl md:w-3xl'>
         <CarouselContent>
           {cardData.map((item, key) => (
             <CarouselItem key={key} className='md:basis-1/1 lg:basis-1/2'>
