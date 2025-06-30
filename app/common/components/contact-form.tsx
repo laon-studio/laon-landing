@@ -46,12 +46,13 @@ export default function ContactForm() {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center py-20'>
+    <div
+      id='contact'
+      className='flex flex-col items-center justify-center py-20'
+    >
       <div className='flex items-center justify-center'>
         <div className='flex flex-col max-w-xl gap-4 text-center'>
-          <p className=' text-xs tracking-[0.1em] uppercase'>
-            Send Us a Message
-          </p>
+          <p className=' text-xs tracking-[0.1em] uppercase'>Work With Us</p>
           <h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl'>
             We’d love to hear your ideas. Let’s make something great.
           </h2>
@@ -126,7 +127,7 @@ export default function ContactForm() {
             />
           </div>
           <Button
-            className='bg-primary px-6 py-3 rounded-xl text-xs font-bold text-white'
+            className='bg-primary px-6 py-3 rounded-xl text-base font-bold text-white'
             type='submit'
             disabled={isLoading}
           >
