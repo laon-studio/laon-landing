@@ -9,7 +9,7 @@ import {
 
 export default function Hero() {
   return (
-    <div className='bg-[url(/hero_bg.jpg)] no-repeat bg-cover bg-center'>
+    <div className='bg-[url(/images/hero_bg.jpg)] no-repeat bg-cover bg-center'>
       <div className='flex flex-col items-center justify-center lg:h-screen px-8 md:px-20'>
         <div className='flex items-center justify-center gap-20 lg:flex-row flex-col pt-30 pb-10 lg:py-0'>
           <div className='flex-1'>
@@ -92,7 +92,7 @@ const TiltCard = () => {
       >
         <img
           className='rounded-xl object-cover w-full h-full shadow-2xl'
-          src='/laon_profile.png'
+          src='/images/laon_profile.png'
           alt='laon profile'
         />
       </Link>

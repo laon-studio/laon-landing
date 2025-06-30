@@ -87,7 +87,7 @@ export default function Navigation() {
     >
       <div className='flex items-center'>
         <Link to='/' className='font-bold tracking-tighter text-lg'>
-          <img src='/laon_logo.png' alt='Laon Studio' className='w-10' />
+          <img src='/images/laon_logo.png' alt='Laon Studio' className='w-10' />
         </Link>
         <Separator orientation='vertical' className='h-6 mx-4' />
         <NavigationMenu>
