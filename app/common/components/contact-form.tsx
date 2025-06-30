@@ -51,7 +51,7 @@ export default function ContactForm() {
 
       <FormProvider {...methods}>
         <form
-          className='flex flex-col gap-4 h-full lg:w-5xl md:w-3xl'
+          className='flex flex-col gap-4 h-full w-full lg:w-5xl md:w-3xl px-4 md:px-0'
           onSubmit={methods.handleSubmit(onSubmit)}
           noValidate
         >
