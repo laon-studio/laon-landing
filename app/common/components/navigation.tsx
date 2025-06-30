@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { Separator } from '~/common/components/ui/separator';
 import { Link } from 'react-router';
 import {
@@ -69,11 +70,24 @@ const menus = [
 ];
 
 export default function Navigation() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <nav className='flex px-20 h-16 items-center justify-between backdrop-blur fixed top-0 left-0 right-0 z-50 bg-background/50'>
+    <nav
+      className={`flex px-20 h-16 items-center justify-between fixed top-0 left-0 right-0 z-50 transition-colors duration-700
+        ${scrolled ? 'backdrop-blur bg-background/50' : ''}`}
+    >
       <div className='flex items-center'>
         <Link to='/' className='font-bold tracking-tighter text-lg'>
-          Laon Studio
+          <img src='/laon_logo.png' alt='Laon Studio' className='w-10' />
         </Link>
         <Separator orientation='vertical' className='h-6 mx-4' />
         <NavigationMenu>
