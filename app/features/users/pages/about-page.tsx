@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className='flex items-center justify-center order-1 md:order-1 w-full md:w-1/2'>
             <div className='md:max-w-[430px] w-full rounded-[30px] relative overflow-hidden'>
               <div className='relative flex flex-col items-center justify-center w-full gap-12'>
-                <img src='/profile_garam.jpeg' alt='profile_garam' />
+                <img src='/images/profile_garam.jpeg' alt='profile_garam' />
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function AboutPage() {
               <div className='relative flex flex-col items-center justify-center w-full gap-12'>
                 <img
                   className='object-cover w-full h-full'
-                  src='/profile_sojeong.jpeg'
+                  src='/images/profile_sojeong.jpeg'
                   alt='profile_sojeong'
                 />
               </div>
@@ -90,7 +90,7 @@ export default function AboutPage() {
           <div className='flex items-center justify-center order-1 md:order-1 w-full md:w-1/2'>
             <div className='md:max-w-[430px] w-full rounded-[30px] relative overflow-hidden'>
               <div className='relative flex flex-col items-center justify-center w-full gap-12'>
-                <img src='/profile_byol.jpeg' alt='profile_byol' />
+                <img src='/images/profile_byol.jpeg' alt='profile_byol' />
               </div>
             </div>
           </div>
