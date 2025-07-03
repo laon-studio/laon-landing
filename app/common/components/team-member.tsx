@@ -9,8 +9,10 @@ export default function TeamMember() {
 			enName: 'Garam Kim',
 			image: '/images/profile_garam.jpeg',
 			alt: 'profile_garam',
-			description:
+			enDescription:
 				"I'm a Full-stack Developer with 7 years of experience, with a strong focus on frontend development over the past 3 years using React.js, TypeScript, and Flutter. I specialize in turning complex ideas into intuitive, high-performing user experiences that drive real business outcomes. Recently, I've been diving into Three.js to explore the world of 3D graphics on the web, expanding my creative and technical capabilities in immersive user interface design.",
+			koDescription:
+				'저는 7년 경력의 풀스택 개발자로, 최근 3년간 React.js, TypeScript, Flutter를 활용한 프론트엔드 개발에 집중해왔습니다. 복잡한 아이디어를 직관적이고 성능 좋은 사용자 경험으로 구현하여 실제 비즈니스 성과로 연결하는 데 전문성을 가지고 있습니다. 최근에는 Three.js를 활용해 웹에서의 3D 그래픽 분야에 도전하며, 몰입감 있는 UI 디자인에 대한 창의적이고 기술적인 역량을 확장하고 있습니다.',
 		},
 		{
 			order: 2,
@@ -18,8 +20,10 @@ export default function TeamMember() {
 			enName: 'Sojeong Park',
 			image: '/images/profile_sojeong.jpeg',
 			alt: 'profile_sojeong',
-			description:
+			enDescription:
 				'👩🏻‍💻𝙀𝙣𝙩𝙝𝙪𝙨𝙞𝙖𝙨𝙩𝙞𝙘 𝙎𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙀𝙣𝙜𝙞𝙣𝙚𝙚𝙧 with over 2 years of working experience in the e-commerce industry. I focus on transforming web experiences into meaningful user journeys. Constantly exploring new ways to enhance user interaction and digital accessibility with modern technologies.',
+			koDescription:
+				'👩🏻‍💻새로운 것을 배우고 만드는 것을 소프트웨어 엔지니어로, 이커머스 산업에서 2년 이상의 실무 경험을 보유하고 있습니다. 웹에서의 경험을 의미 있는 사용자 여정으로 바꾸는 데 집중하며, 최신 기술을 활용해 사용자 인터랙션과 디지털 접근성을 끊임없이 개선하는 방법을 탐구하고 있습니다.',
 		},
 		{
 			order: 1,
@@ -27,8 +31,10 @@ export default function TeamMember() {
 			enName: 'Byol Han',
 			image: '/images/profile_byol.jpeg',
 			alt: 'profile_byol',
-			description:
-				'I’m a Frontend Developer with a strong foundation in HTML, CSS, JavaScript and modern frameworks like React and Vue.js. With hands-on experience in SASS, Tailwind CSS, Bootstrap, Material UI, and Quasar, I focus on building seamless, user-centric web applications that deliver both functionality and aesthetic appeal.',
+			enDescription:
+				"I'm a Frontend Developer with a strong foundation in HTML, CSS, JavaScript and modern frameworks like React and Vue.js. With hands-on experience in SASS, Tailwind CSS, Bootstrap, Material UI, and Quasar, I focus on building seamless, user-centric web applications that deliver both functionality and aesthetic appeal.",
+			koDescription:
+				'저는 HTML, CSS, JavaScript와 React, Vue.js 같은 최신 프레임워크에 탄탄한 기반을 가진 프론트엔드 개발자입니다. SASS, Tailwind CSS, Bootstrap, Material UI, Quasar 등의 실무 경험을 바탕으로, 기능성과 미적 완성도를 모두 갖춘 사용자 중심의 웹 애플리케이션을 구축하는 데 집중하고 있습니다.',
 		},
 	];
 
@@ -58,7 +64,9 @@ export default function TeamMember() {
 									<h3 className='text-black text-2xl md:text-3xl'>
 										{locale === 'KO' ? item.koName : item.enName}
 									</h3>
-									<p className='text-black text-md'>{item.description}</p>
+									<p className='text-black text-md'>
+										{locale === 'KO' ? item.koDescription : item.enDescription}
+									</p>
 								</div>
 							</div>
 						</div>
