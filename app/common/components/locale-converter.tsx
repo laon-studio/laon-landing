@@ -9,23 +9,24 @@ const LocaleConverter = () => {
 		<div className='fixed bottom-4 right-4'>
 			<ul
 				className='flex flex-col gap-2'
-				onMouseEnter={() => setIsHover(true)}
 				onMouseLeave={() => setIsHover(false)}>
 				<li
-					className={`bg-white rounded-full p-2 shadow-lg text-center cursor-pointer ${
-						isHover ? 'block' : 'hidden'
+					className={`bg-white rounded-full p-2 shadow-lg text-center cursor-pointer  transition-opacity duration-300 ${
+						isHover ? ' opacity-100' : 'appearance-none opacity-0'
 					}`}
 					onClick={() => toggleLocale('EN')}>
 					EN
 				</li>
 				<li
-					className={`bg-white rounded-full p-2 shadow-lg text-center cursor-pointer ${
-						isHover ? 'block' : 'hidden'
+					className={`bg-white rounded-full p-2 shadow-lg text-center cursor-pointer  transition-opacity duration-300 ${
+						isHover ? ' opacity-100' : 'appearance-none opacity-0'
 					}`}
 					onClick={() => toggleLocale('KO')}>
 					KO
 				</li>
-				<li className='bg-white rounded-full p-2 shadow-lg cursor-pointer'>
+				<li
+					className='bg-white rounded-full p-2 shadow-lg cursor-pointer'
+					onMouseEnter={() => setIsHover(true)}>
 					<Earth />
 				</li>
 			</ul>
