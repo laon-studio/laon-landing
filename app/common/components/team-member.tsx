@@ -45,7 +45,7 @@ export default function TeamMember() {
 				<div className='flex flex-col max-w-xl gap-4 text-center'>
 					<p className=' text-xs tracking-[0.1em] uppercase'>People</p>
 					<h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl'>
-						Meet Our Team
+						{locale === 'EN' ? 'Meet Our Team' : '우리 팀을 소개합니다.'}
 					</h2>
 				</div>
 			</div>

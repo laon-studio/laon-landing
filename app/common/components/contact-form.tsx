@@ -55,8 +55,10 @@ export default function ContactForm() {
 			<div className='flex items-center justify-center'>
 				<div className='flex flex-col max-w-xl gap-4 text-center'>
 					<p className=' text-xs tracking-[0.1em] uppercase'>Work With Us</p>
-					<h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl'>
-						We’d love to hear your ideas. Let’s make something great.
+					<h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl whitespace-pre'>
+						{locale === 'EN'
+							? 'We’d love to hear your ideas. Let’s make something great.'
+							: `당신의 아이디어를 들려주세요. \n 함께 멋진 것을 만들어봐요.`}
 					</h2>
 				</div>
 			</div>
