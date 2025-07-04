@@ -13,6 +13,14 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const section = document.getElementById('contact');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav
       className={`flex px-4 md:px-20 h-16 items-center justify-center fixed top-0 left-0 right-0 z-50 transition-colors duration-700
@@ -30,6 +38,7 @@ export default function Navigation() {
         <a
           href='#contact'
           className='px-5 py-2 rounded-full bg-primary text-white font-semibold shadow-md flex items-center gap-2 hover:bg-primary/80 transition'
+          onClick={handleContactClick}
         >
           Inquiry <FaPaperPlane size={16} />
         </a>

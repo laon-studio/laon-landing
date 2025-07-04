@@ -28,8 +28,23 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
       <head>
+        <title>Laon Studio</title>
+        <meta
+          name='description'
+          content='Your partner for bringing ideas to life fast'
+        />
         <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta property='og:title' content='Laon Studio' />
+        <meta
+          property='og:description'
+          content='Your partner for bringing ideas to life fast'
+        />
+        <meta property='og:image' content='/images/laon_og_image.png' />
+        <meta property='og:type' content='website' />
+        <meta property='og:url' content='https://your-domain.com' />
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:image' content='/images/laon_og_image.png' />
         <Meta />
         <Links />
       </head>
@@ -69,7 +84,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 
   return (
     <main className='pt-16 p-4 container mx-auto'>
-      <h1>{message}</h1>
+      <h1 className='text-3xl font-bold'>{message}</h1>
       <p>{details}</p>
       {stack && (
         <pre className='w-full p-4 overflow-x-auto'>
