@@ -51,21 +51,21 @@ export default function ContactForm() {
 	return (
 		<div
 			id='contact'
-			className='flex flex-col items-center justify-center py-20'>
+			className='flex flex-col items-center justify-center py-20 px-4'>
 			<div className='flex items-center justify-center'>
-				<div className='flex flex-col max-w-xl gap-4 text-center'>
+				<div className='flex flex-col gap-4 text-center'>
 					<p className=' text-xs tracking-[0.1em] uppercase'>Work With Us</p>
-					<h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl whitespace-pre'>
+					<h2 className='text-black text-4xl leading-4xl md:text-5xl md:leading-5xl md:whitespace-pre whitespace-normal'>
 						{locale === 'EN'
-							? 'We’d love to hear your ideas. Let’s make something great.'
-							: `당신의 아이디어를 들려주세요. \n 함께 멋진 것을 만들어봐요.`}
+							? 'We’d love to hear your ideas. \nLet’s make something great.'
+							: '당신의 아이디어를 들려주세요. \n함께 멋진 것을 만들어봐요.'}
 					</h2>
 				</div>
 			</div>
 			<div className='w-full h-auto pb-[100px]'></div>
 			<FormProvider {...methods}>
 				<form
-					className='flex flex-col gap-4 h-full w-full lg:w-5xl md:w-3xl px-4 md:px-0'
+					className='flex flex-col gap-4 h-full w-full lg:max-w-4xl px-4 md:px-0'
 					onSubmit={methods.handleSubmit(onSubmit)}
 					noValidate>
 					<div>
