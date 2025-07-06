@@ -9,7 +9,7 @@ export default function TeamMember() {
       order: 1,
       koName: '김가람',
       enName: 'Garam Kim',
-      image: '/images/profile_garam.jpeg',
+      image: '/images/profile_garam.jpg',
       alt: 'profile_garam',
       github: 'https://github.com/iizz',
       linkedin: 'https://www.linkedin.com/in/garamkim-dev/',
@@ -23,7 +23,7 @@ export default function TeamMember() {
       order: 2,
       koName: '박소정',
       enName: 'Sojeong Park',
-      image: '/images/profile_sojeong.jpeg',
+      image: '/images/profile_sojeong.jpg',
       alt: 'profile_sojeong',
       github: 'https://github.com/sojeongsojeong-park',
       linkedin: 'https://www.linkedin.com/in/sojeong-park-fedeveloper/',
@@ -37,7 +37,7 @@ export default function TeamMember() {
       order: 1,
       koName: '한별',
       enName: 'Byol Han',
-      image: '/images/profile_byol.jpeg',
+      image: '/images/profile_byol.jpg',
       alt: 'profile_byol',
       github: 'https://github.com/byol-han',
       linkedin: 'https://www.linkedin.com/in/byol-han/',
@@ -117,9 +117,13 @@ export default function TeamMember() {
                 item.order === 2 && 'justify-end'
               }`}
             >
-              <div className='md:max-w-[430px] w-full rounded-[30px] relative overflow-hidden'>
-                <div className='relative flex flex-col w-full gap-12'>
-                  <img src={item.image} alt={item.alt} />
+              <div className='md:max-w-[430px] w-full max-h-[380px] rounded-[30px] relative overflow-hidden'>
+                <div className='relative flex flex-col w-full h-full gap-12'>
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className='object-contain h-full'
+                  />
                 </div>
               </div>
             </div>
