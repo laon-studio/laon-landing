@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router';
 import { FaPaperPlane } from 'react-icons/fa';
+import { useLocale } from '../providers/locale-provider';
 
 export default function Navigation() {
-  const [scrolled, setScrolled] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
+	const { locale } = useLocale();
 
-  useEffect(() => {
-    const onScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+	useEffect(() => {
+		const onScroll = () => {
+			setScrolled(window.scrollY > 0);
+		};
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
 
   const handleContactClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -40,9 +42,10 @@ export default function Navigation() {
           className='px-5 py-2 rounded-full bg-primary text-white font-semibold shadow-md flex items-center gap-2 hover:bg-primary/80 transition'
           onClick={handleContactClick}
         >
-          Inquiry <FaPaperPlane size={16} />
+          {locale === 'KO' ? '문의하기' : 'Inquiry'} <FaPaperPlane size={16} />
         </a>
       </div>
     </nav>
   );
+
 }
