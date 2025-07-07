@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 
 export default function Footer() {
@@ -32,6 +32,14 @@ export default function Footer() {
             aria-label='X'
           >
             <SiX size={20} />
+          </a>
+          <a
+            href='mailto:laonstudio.dev@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            aria-label='Email'
+          >
+            <FaEnvelope size={22} />
           </a>
         </div>
       </div>
