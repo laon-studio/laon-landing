@@ -6,14 +6,14 @@ import Footer from '~/common/components/footer';
 import LocaleConverter from '../components/locale-converter';
 
 export default function HomePage() {
-	return (
-		<>
-			<Hero />
-			<Portfolio />
-			<TeamMember />
-			<ContactForm />
-			<Footer />
-			<LocaleConverter />
-		</>
-	);
+  return (
+    <>
+      <Hero />
+      <Portfolio />
+      <TeamMember />
+      <ContactForm />
+      <Footer />
+      <LocaleConverter />
+    </>
+  );
 }
